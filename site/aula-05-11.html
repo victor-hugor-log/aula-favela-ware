@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portal de Oportunidades | Favela Tech</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <img src="assets/logo.png" alt="Favela Tech" class="logo" />
+      <h1>Favela Tech — Portal de Oportunidades</h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Conectando jovens capacitados a empresas locais</h2>
+      <p>Cadastre seu currículo, receba recomendações de vagas e alertas por e-mail.</p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Buscar vagas</h3>
+        <div class="search">
+          <input type="text" id="searchKeywords" placeholder="Ex: front-end, suporte, Python" />
+          <select id="searchLocation">
+            <option value="">Qualquer lugar</option>
+            <option value="Belo Horizonte">Belo Horizonte</option>
+            <option value="Porto Alegre">Porto Alegre</option>
+          </select>
+          <button id="btnSearch">Pesquisar</button>
+        </div>
+        <ul id="jobResults" class="job-list"></ul>
+      </div>
+
+      <div class="card">
+        <h3>Cadastre seu currículo</h3>
+        <form id="resumeForm">
+          <input type="text" id="name" placeholder="Nome completo" required />
+          <input type="email" id="email" placeholder="E-mail" required />
+          <input type="text" id="skills" placeholder="Habilidades (vírgula separadas)" />
+          <textarea id="bio" placeholder="Resumo / objetivo (opcional)"></textarea>
+          <button type="submit">Salvar currículo</button>
+        </form>
+        <div id="profileCard" class="profile-card hidden"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Recomendações</h3>
+      <p>Vagas recomendadas pra você com base nas suas habilidades:</p>
+      <ul id="recommendations" class="job-list"></ul>
+    </section>
+  </main>
+
+  <!-- Chatbot -->
+  <div id="chatbot">
+    <div id="chatHeader">WareBot 🤖</div>
+    <div id="chatBody" class="chat-body"></div>
+    <form id="chatForm" class="chat-form">
+      <input id="chatInput" placeholder="Pergunta pro WareBot..." autocomplete="off" />
+      <button>Enviar</button>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <small>Favela Tech — Protótipo • 2025</small>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

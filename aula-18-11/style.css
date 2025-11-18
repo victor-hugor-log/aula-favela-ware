@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div {
+    text-align: center;
+}
+
+.categoria {
+    width: 250px;
+    margin: 20px auto;      /* centraliza a caixa */
+    padding: 15px;          /* espaço interno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Título da categoria */
+.titulo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Cada animal */
+.animal {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.animal:hover {
+    background-color: #6a5acd ;
+    transform: scale(1.00);
+    box-shadow: 0 0 18px rgb(32, 43, 69)
+}
+
+/* C) CLASSES ESPECÍFICAS POR CATEGORIA */
+.mamiferos {
+    border-left: 5px solid #8b4513;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.aves {
+    border-left: 5px solid #1e90ff;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.repteis {
+    border-left: 5px solid #228b22;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.anfibios {
+    border-left: 5px solid #6a5acd;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.peixes {
+    border-left: 5px solid #20b2aa;
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* D) SELETORES POR ID */
+#gato {
+    font-weight: bold;   /* negrito */
+}
+
+#aguia {
+    font-style: italic;  /* itálico */
+}
+
+/* se quiser usar os outros IDs também: */
+#cobra {
+    text-decoration: underline;
+}
+
+#sapo {
+    color: green;
+}
+
+#salmao {
+    color: orange;
+}
