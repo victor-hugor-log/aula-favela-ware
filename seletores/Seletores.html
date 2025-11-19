@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Seletores CSS - Versão Aluno</title>
+
+    <!-- 
+    =======================================
+    ÁREA DE TRABALHO: INSIRA SEU CÓDIGO CSS EM UM ARQUIVO SEPARADO
+    Utilize os enunciados e o guia de auxílio para resolver os desafios.
+    ======================================= 
+    -->
+<link rel="stylesheet" href="Seletores.css">
+    <style>
+        /* ======================================= */
+        /* CSS GERAL (Não altere estas regras) */
+        /* ======================================= */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f7f7f7;
+        }
+
+        .section-header {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #e0f7fa;
+            border-left: 5px solid #00bcd4;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            background-color: white;
+            min-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Desafio de Seletores CSS</h1>
+        <p>Aplique os estilos corretos no bloco &lt;style&gt; seguindo o enunciado.</p>
+    </header>
+
+    <!-- ------------------------------------- -->
+    <!-- SEÇÃO 1: Seletores Básicos -->
+    <!-- ------------------------------------- -->
+    <div class="section-header">
+        <h2>Desafio 1: Básico (Tag, ID, Classe)</h2>
+    </div>
+
+    <div class="box">
+        <p>Este é um parágrafo. (Deve ficar azul)</p>
+        <p class="importante">Este parágrafo é importante. (Deve ter fundo cinza e texto azul)</p>
+    </div>
+
+    <div class="box importante" id="foco-id">
+        <p>Este parágrafo deve ser azul.</p>
+        <p>Este box tem ID "foco-id" e classe "importante". (Deve ter fundo amarelo claro)</p>
+        <p>O CSS geral também é aplicado.</p>
+    </div>
+
+    <!-- ------------------------------------- -->
+    <!-- SEÇÃO 2: Seletores Combinados e de Atributo -->
+    <!-- ------------------------------------- -->
+    <div class="section-header">
+        <h2>Desafio 2: Combinados e Atributo</h2>
+    </div>
+
+    <div class="box container-direto">
+        <!-- Filho direto: Deve ter borda verde -->
+        <span>Sou um span.</span>
+
+        <div>
+            <!-- Não é filho direto: Borda normal -->
+            <span>Sou um span dentro de uma div.</span>
+        </div>
+    </div>
+
+    <div class="box" data-tipo="primario">
+        <p>Este é um elemento com um atributo `data-tipo="primario"`. (Deve ter borda vermelha)</p>
+    </div>
+
+    <div class="box lista-escura">
+        <h3>Lista Escura</h3>
+        <ul>
+            <li style="color: black;">Item de lista 1 (O texto deve ficar branco)</li>
+            <li>Item de lista 2 (O texto deve ficar branco)
+                <!-- Texto que está DENTRO da lista: deve ficar branco -->
+                <p>Este parágrafo também está dentro.</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ------------------------------------- -->
+    <!-- SEÇÃO 3: Seletores de Pseudoclasse -->
+    <!-- ------------------------------------- -->
+    <div class="section-header">
+        <h2>Desafio 3: Pseudoclasses (Avançado)</h2>
+    </div>
+
+    <div class="box lista-avancada">
+        <h3>Lista Avançada</h3>
+        <ul>
+            <!-- Deve ter font-size diferente -->
+            <li>Primeiro item (Deve ser maior e em negrito)</li>
+            <li>Segundo item</li>
+            <li>Terceiro item</li>
+        </ul>
+    </div>
+
+    <div class="box box-parent">
+        <h3>Box Parent</h3>
+        <div>Primeira div filha</div>
+        <div>Segunda div filha</div>
+        <!-- Esta div deve ter fundo diferente -->
+        <div>Terceira div filha (Deve ter fundo rosa claro)</div>
+        <div>Quarta div filha</div>
+    </div>
+
+    <div class="box interativo">
+        <p>Passe o mouse por cima (hover). (A cor de fundo deve mudar para laranja)</p>
+    </div>
+
+</body>
+
+</html>

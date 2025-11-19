@@ -1,0 +1,58 @@
+/* ===============================
+   Configuração Global e Fontes
+================================*/
+body {
+    font-family: Arial, Helvetica, sans-serif; /* muda a fonte */
+    margin: 0;                                  /* remove margens */
+    background-color: #000000;                  /* cor de fundo */
+}
+
+
+/* ===============================
+   Cabeçalho e Rodapé
+================================*/
+header,
+footer {
+    background-color: #2542e7;      /* cor de fundo */
+    color: #fff;                 /* cor do texto */
+    text-align: center;          /* centraliza o texto */
+    padding: 20px;               /* espaçamento interno */
+    margin: 0;
+}
+
+
+/* ===============================
+   Conteúdo Principal
+================================*/
+main {
+    padding: 20px;               /* espaçamento interno */
+}
+
+
+/* ===============================
+   Onde a mágica do FLEXBOX acontece
+================================*/
+.container-cards {
+    display: flex;               /* ativa o flexbox */
+    justify-content: space-around; /* alinha com espaço ao redor */
+    flex-wrap: wrap;             /* permite quebrar linha */
+    gap: 20px;                   /* espaçamento entre os cards */
+}
+
+
+/* ===============================
+   Estilização dos Cards Individuais
+================================*/
+.card {
+    background-color: #ffffff;       /* cor de fundo do card */
+    border-radius: 10px;          /* bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* sombra */
+    padding: 20px;                /* espaçamento interno */
+
+    flex-basis: 300px;            /* tamanho base */
+    flex-grow: 1;                 /* permite crescer */
+    box-sizing: border-box;       /* evita estourar largura */
+
+    /* opcional: só pra deixar bonito */
+    border: 1px solid #ddd;
+}

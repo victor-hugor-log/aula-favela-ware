@@ -1,0 +1,27 @@
+p {
+    color: blue;
+}
+#foco-id {
+    background-color: #fff9c4;
+}
+.importante {
+    background-color: #eee;
+}
+[data-tipo] {
+    border: 2px solid red
+}
+span {
+    border-color: green;
+}
+.lista-escura li {
+    color: #ffffff;
+}
+.lista-avancada li:first-child {
+    font-size: 20px; 
+}
+.box-parent div:nth-of-type(3) {
+    background-color: yellow; 
+}
+.interativo:hover {
+    background-color: orange;
+}
