@@ -1,0 +1,160 @@
+/* =========================================
+   MISSÃO NÍVEL 2: CONFIGURAÇÕES GLOBAIS
+   ========================================= */
+
+/* SELETOR UNIVERSAL (*) */
+* {
+  /* 1. Defina o box-sizing como border-box para evitar problemas de tamanho */
+  box-sizing: border-box
+  /* 2. Defina a família da fonte como 'Press Start 2P', e cursive como fallback */
+  font-family: "Press Start 2P", cursive;
+  /* 3. Zere a margem (margin) e o preenchimento (padding) de tudo */
+  margin: 0;
+  Padding: 0;
+
+  /* 4. Defina a cor do texto como #f1f1f1 */
+color: #f1f1f1;
+}
+
+/* CORPO DA PÁGINA (BODY) */
+body {
+  /* 1. Cor de fundo: #1a1a2e */
+  background-color: #1a1a2e;
+
+  /* 2. Alinhe todo o texto do body ao centro */
+text-align: center;
+  /* 3. Adicione um padding de 40px em cima e embaixo, e 0 nas laterais */
+
+padding: 40px 0;
+
+  /* --- FLEXBOX NO BODY --- */
+  /* Queremos centralizar tudo na tela */
+
+  min-height: 100vh;
+
+  /* 4. Ative o Flexbox */
+
+  display: flex;
+
+  /* 5. Mude a direção para coluna (column) para o cabeçalho ficar em cima dos cards */
+
+  flex-direction: column;
+
+  /* 6. Centralize os itens horizontalmente (align-items) */
+
+  align-items: center;
+
+  /* 7. Centralize os itens verticalmente (justify-content) */
+
+justify-content: center;
+
+}
+
+/* =========================================
+   CABEÇALHO
+   ========================================= */
+
+header {
+  padding: 40px;
+}
+
+header h1 {
+  /* Cor de destaque: #e94560 */
+  color: ;
+  /* Tamanho da fonte grande: 45px */
+  font-size: ;
+}
+
+/* =========================================
+   MISSÃO NÍVEL 3: O LAYOUT (CONTAINER)
+   ========================================= */
+
+.container-herois {
+  /* 1. Ative o Flexbox para que os cards fiquem um ao lado do outro */
+
+  /* 2. Centralize o conteúdo (justify-content) */
+
+  /* 3. Crie um espaço de 30px entre os cards (gap) */
+
+  /* 4. Permita que os cards quebrem de linha (wrap) se a tela for pequena */
+}
+
+/* =========================================
+   MISSÃO NÍVEL 4: OS CARDS
+   ========================================= */
+
+.card {
+  /* --- ESTILO VISUAL --- */
+  /* Fundo: #16213e */
+  background-color: ???;
+
+  /* Borda: 4px sólida cor #0f3460 */
+  border: ???;
+
+  /* Padding de 20px em todos os lados */
+
+  /* Largura fixa de 250px */
+
+  /* Borda arredondada de 15px */
+
+  /* --- FLEXBOX INTERNO DO CARD --- */
+  /* Queremos alinhar a imagem, texto e botão um abaixo do outro */
+
+  /* 1. Ative o Flexbox */
+
+  /* 2. Mude a direção para coluna */
+
+  /* 3. Centralize os itens horizontalmente (align-items) */
+}
+
+/* =========================================
+   MISSÃO NÍVEL 5: DETALHES FINAIS
+   ========================================= */
+
+/* IMAGEM DENTRO DO CARD */
+.card img {
+  /* Defina largura e altura como 100px */
+
+  /* Adicione margem abaixo de 15px */
+}
+
+/* TÍTULO DO HERÓI (H2) */
+.card h2 {
+  /* Tamanho da fonte:  */
+
+  /* Margem abaixo:  */
+
+  /* Cor de destaque: #e94560 */
+}
+
+/* DESCRIÇÃO DO PODER (P) */
+.card p {
+  /* Tamanho da fonte:  */
+
+  /* Altura da linha (line-height):  */
+}
+
+/* BOTÃO DE SELEÇÃO */
+.card button {
+  /* Cor de fundo: #0f3460 */
+  background-color: ;
+
+  /* Remova a borda padrão (border: ) */
+
+  /* Padding:  (vertical) e  (horizontal) */
+
+  /* Margem acima:  */
+
+  /* Cursor:  (mãozinha) */
+
+  /* Fonte:  */
+
+  /* Transição suave: 0.3s */
+  transition: 0.3s;
+}
+
+/* ESTADO HOVER (MOUSE EM CIMA DO BOTÃO) */
+.card button:hover {
+  /* Mude a cor de fundo para #e94560 */
+  background-color: ;
+}

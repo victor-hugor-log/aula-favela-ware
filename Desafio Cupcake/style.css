@@ -1,0 +1,116 @@
+/* MINI-PROJETO: CSS CUPCAKE
+   Siga os comentários para estilizar a página.
+   Consulte o Manual de Estilo para as cores e tamanhos exatos.
+*/
+
+/* 1. Configurações Globais */
+* {
+  /* Defina o 'box-sizing' como 'border-box' para facilitar o cálculo de tamanhos */
+  box-sizing: border-box;
+
+  /* Defina a fonte da família 'Alice', com serif como fallback */
+  font-family: "Alice", serif;
+
+  /* Defina o espaçamento entre linhas (line-height) como 1.5 */
+  line-height: 1.5;
+
+  /* Defina a cor padrão do texto (ver Manual de Estilo) */
+  color: #573a37; /* Café Expresso */
+}
+
+/* 2. O Corpo da Página (Fundo da tela) */
+body {
+  /* Adicione a imagem de fundo que está em 'assets/bg.jpg' */
+  background-image: url("assets/bg.jpg");
+
+  /* Faça com que a imagem de fundo cubra todo o espaço disponível (cover) */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 3. O Cartão da Receita (Container Principal) */
+#page {
+  /* Defina a largura fixa do cartão (ver Manual de Estilo) */
+  width: 800px;
+
+  /* Adicione um espaçamento interno (padding) de 24px em todos os lados */
+  padding: 24px;
+
+  /* Defina a cor de fundo do cartão (ver Manual de Estilo) */
+  background-color: #f0e8c2; /* Creme de Baunilha */
+
+  /* Arredonde as bordas do cartão (ver Manual de Estilo) */
+  border-radius: 24px;
+
+  /* CENTRALIZAÇÃO: 
+     Adicione margem superior de 48px, 
+     margem inferior de 28px, 
+     e laterais automáticas para centralizar */
+  margin: 48px auto 28px auto;
+}
+
+/* 4. Conteúdo Principal */
+main {
+  /* O texto está muito colado na borda da imagem. 
+     Adicione um padding de 24px */
+  padding: 24px;
+}
+
+/* 5. Espaçamento entre Seções */
+section {
+  /* Adicione uma margem no topo de 24px para separar as seções */
+  margin-top: 24px;
+}
+
+/* 6. Ajustes do Texto "Sobre" */
+#sobre p {
+  /* Adicione uma margem inferior de 10px entre os parágrafos */
+  margin-bottom: 10px;
+}
+
+/* 7. Estilizando o Título Principal */
+h1 {
+  /* Defina a altura da linha como 1.4 para ficar mais elegante */
+  line-height: 1.4;
+
+  /* Defina o tamanho da fonte (ver Manual de Estilo) */
+  font-size: 40px;
+}
+
+/* 8. Estilizando os Subtítulos */
+h2 {
+  /* Defina o tamanho da fonte (ver Manual de Estilo) */
+  font-size: 24px;
+}
+
+/* 9. Regras comuns para Títulos (H1 e H2) */
+h1,
+h2 {
+  /* Defina a cor dos títulos (ver Manual de Estilo) */
+  color: #291b1a; /* Chocolate Amargo */
+
+  /* Adicione uma pequena margem inferior de 4px */
+  margin-bottom: 4px;
+}
+
+/* 10. Lista de Ingredientes */
+ul {
+  /* Adicione um padding esquerdo de 20px para alinhar as bolinhas */
+  padding-left: 20px;
+}
+
+/* 11. O Rodapé */
+footer {
+  /* Centralize o texto */
+  text-align: center;
+
+  /* Adicione um padding inferior de 48px para não colar no fim da tela */
+  padding-bottom: 48px;
+
+  /* Diminua o tamanho da fonte para 14px */
+  font-size: 14px;
+
+  /* Mude a cor do texto para dar contraste com o fundo escuro da imagem (ver Manual de Estilo) */
+  color: #f0e8c2; /* Creme de Baunilha */
+}
