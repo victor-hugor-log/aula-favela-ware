@@ -5,9 +5,9 @@
 /* SELETOR UNIVERSAL (*) */
 * {
   /* 1. Defina o box-sizing como border-box para evitar problemas de tamanho */
-  box-sizing: border-box
+  box-sizing: border-box;
   /* 2. Defina a família da fonte como 'Press Start 2P', e cursive como fallback */
-  font-family: "Press Start 2P", cursive;
+  font-family: 'Press Start 2P', cursive;
   /* 3. Zere a margem (margin) e o preenchimento (padding) de tudo */
   margin: 0;
   Padding: 0;
@@ -60,9 +60,9 @@ header {
 
 header h1 {
   /* Cor de destaque: #e94560 */
-  color: ;
+  color: #e94560;
   /* Tamanho da fonte grande: 45px */
-  font-size: ;
+  font-size: 45px;
 }
 
 /* =========================================
@@ -70,13 +70,19 @@ header h1 {
    ========================================= */
 
 .container-herois {
-  /* 1. Ative o Flexbox para que os cards fiquem um ao lado do outro */
+/* 1. Ative o Flexbox para que os cards fiquem um ao lado do outro */
 
-  /* 2. Centralize o conteúdo (justify-content) */
+  display: flex;
 
-  /* 3. Crie um espaço de 30px entre os cards (gap) */
+/* 2. Centralize o conteúdo (justify-content) */
 
-  /* 4. Permita que os cards quebrem de linha (wrap) se a tela for pequena */
+  justify-content: center;
+
+/* 3. Crie um espaço de 30px entre os cards (gap) */
+
+  gap: 30px;
+
+/* 4. Permita que os cards quebrem de linha (wrap) se a tela for pequena */
 }
 
 /* =========================================
@@ -86,25 +92,38 @@ header h1 {
 .card {
   /* --- ESTILO VISUAL --- */
   /* Fundo: #16213e */
-  background-color: ???;
+  background-color: #16213e ;
 
   /* Borda: 4px sólida cor #0f3460 */
-  border: ???;
+  border: 4px solid color #0f3460;
 
   /* Padding de 20px em todos os lados */
 
+  padding: 20px;
+
   /* Largura fixa de 250px */
 
+  width: 250px;
+
   /* Borda arredondada de 15px */
+
+border-radius: 15px;
 
   /* --- FLEXBOX INTERNO DO CARD --- */
   /* Queremos alinhar a imagem, texto e botão um abaixo do outro */
 
   /* 1. Ative o Flexbox */
 
+  display: flex;
+
   /* 2. Mude a direção para coluna */
 
+  flex-direction: column;
+
   /* 3. Centralize os itens horizontalmente (align-items) */
+
+  align-items: center;
+
 }
 
 /* =========================================
@@ -115,46 +134,75 @@ header h1 {
 .card img {
   /* Defina largura e altura como 100px */
 
+  width: 100px;
+  height: 100px;
+
   /* Adicione margem abaixo de 15px */
+
+  margin: 15px;
+
 }
 
 /* TÍTULO DO HERÓI (H2) */
 .card h2 {
   /* Tamanho da fonte:  */
 
+font-size: 15px;
+
   /* Margem abaixo:  */
 
+  margin-bottom: auto;
+
   /* Cor de destaque: #e94560 */
+
+  color: #e94560;
+
 }
 
 /* DESCRIÇÃO DO PODER (P) */
 .card p {
   /* Tamanho da fonte:  */
 
+  font-size: 10px;
+
   /* Altura da linha (line-height):  */
+
+  line-height: 1.2;
+
 }
 
 /* BOTÃO DE SELEÇÃO */
 .card button {
   /* Cor de fundo: #0f3460 */
-  background-color: ;
+  background-color: #0f3460;
 
   /* Remova a borda padrão (border: ) */
 
+  border: none;
+
   /* Padding:  (vertical) e  (horizontal) */
+
+  padding: 10px 20px;
 
   /* Margem acima:  */
 
+  margin-top: 10px;
+
   /* Cursor:  (mãozinha) */
+
+  cursor: pointer;
 
   /* Fonte:  */
 
+font: 14px;
+
   /* Transição suave: 0.3s */
   transition: 0.3s;
+
 }
 
 /* ESTADO HOVER (MOUSE EM CIMA DO BOTÃO) */
 .card button:hover {
   /* Mude a cor de fundo para #e94560 */
-  background-color: ;
+  background-color: #e94560;
 }
